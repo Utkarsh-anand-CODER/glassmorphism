@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Christmas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Christmas tree</h2>
+            <a href="#" class="buy">Buy Now</a>
+            <img src="christmas-tree.png" class="product" alt="Christmas tree image">
+        </div>
+        <div class="box">
+            <h2 class="name">Christmas gift</h2>
+            <a href="#" class="buy">Buy Now</a>
+            <img src="christmas-gift.png" class="product" alt="Christmas tree image">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400,
+        transition: true,
+        glare :true,
+	});
+    </script>
+</body>
+</html>
